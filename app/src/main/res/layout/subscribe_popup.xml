@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRIDAŤ ODBER"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <android.support.v7.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/subscribeRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VYTVOR NOVÝ RSS ODBER"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:background="@drawable/layoutborder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="RSS URL:"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="5dp"/>
+
+
+
+            <EditText
+                android:id="@+id/rssUrlEdit"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/subscribeImgView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/subscribe"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
